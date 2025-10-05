@@ -8,11 +8,11 @@ The minicon-project repository is a minimalistic containerization framework desi
 
 The project consists of the following key components:
 
-monitor.bpf.c: A C program utilizing eBPF (Extended Berkeley Packet Filter) to monitor system calls related to container processes. This file is essential for tracking and managing container activities at the kernel level.
+`monitor.bpf.c`: A C program utilizing eBPF (Extended Berkeley Packet Filter) to monitor system calls related to container processes. This file is essential for tracking and managing container activities at the kernel level.
 
-mycontainer.c: The core implementation of the container engine. Written in C, this program handles the creation, execution, and management of containerized processes, providing a hands-on understanding of container internals.
+`mycontainer.c`: The core implementation of the container engine. Written in C, this program handles the creation, execution, and management of containerized processes, providing a hands-on understanding of container internals.
 
-setup.sh: A shell script that automates the setup process. It compiles the necessary C programs and sets up the environment, ensuring that users can quickly get the project up and running.
+`setup.sh`: A shell script that automates the setup process. It compiles the necessary C programs and sets up the environment, ensuring that users can quickly get the project up and running.
 
 
 ## Getting Started
@@ -36,13 +36,13 @@ Root privileges for setting up and monitoring containers
 
 Clone the repository to your local machine:
 
-git clone https://github.com/somelucs/minicon-project.git
-cd minicon-project
+`git clone https://github.com/somelucs/minicon-project.git`
+`cd minicon-project`
 
 Run the setup script to compile the necessary programs:
 
-chmod +x setup.sh
-./setup.sh
+`chmod +x setup.sh`
+`./setup.sh`
 
 This script will compile monitor.bpf.c and mycontainer.c, preparing them for execution.
 
@@ -50,11 +50,11 @@ This script will compile monitor.bpf.c and mycontainer.c, preparing them for exe
 
 To create and run a container:
 
-sudo ./mycontainer
+`sudo ./mycontainer`
 
 To monitor system calls related to the container:
 
-sudo ./monitor.bpf
+`sudo ./monitor.bpf`
 
 Ensure that both programs are running simultaneously to effectively manage and monitor the container.
 
